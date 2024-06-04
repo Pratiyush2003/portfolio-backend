@@ -3,9 +3,9 @@ const connectdbs = require('./db.js')
 const bodyParser = require('body-parser')
 require('dotenv').config();
 const cors = require('cors');
-const EmployerRouter = require('../backend/Route/Employerroute.js');
+const EmployerRouter = require('./Route/Employerroute.js');
 const router = require('./Route/SkillsRoute.js')
-const authentication = require('../backend/Route/Registerrroute.js')
+const authentication = require('.Route/Registerrroute.js')
 
 const app = express();
 const port  = process.env.PORT || 4000;
